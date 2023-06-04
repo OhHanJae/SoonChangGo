@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/1411424180.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a id="profill" class="navbar-brand" href="#"><img src="SCG.jpg" alt="순창고"></a>
+          <a class="nav-link active" aria-current="page" href="#">SoonChangGo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Profile
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Album
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#together"><strong>[싱글] 서로는 서로를</strong></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#now"><strong>[EP] 지금, 그때</strong></a></li>
+                    <li><a class="dropdown-item" href="#cndjr">추억으로만 간직해야 해</a></li>
+                    <li><a class="dropdown-item" href="#maum">마음 속 이야기</a></li>
+                    <li><a class="dropdown-item" href="#ag">아직 그리워해</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#purple"><strong>[싱글] 보라색 고백</strong></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#unlock"><strong>[싱글] 잠금해제</strong></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><strong>[정규] SOON</strong></a></li>
+                    <li><a class="dropdown-item" href="#hc">한참</a></li>   
+                    <li><a class="dropdown-item" href="#bye">Bye</a></li>
+                    <li><a class="dropdown-item" href="#sg">사랑에 관하여</a></li>
+                    <li><a class="dropdown-item" href="#purple">보라색 고백</a></li>
+                    <li><a class="dropdown-item" href="#pilly">Philly</a></li>
+                    <li><a class="dropdown-item" href="#cry">오늘만 울자</a></li>
+                    <li><a class="dropdown-item" href="#but">어쩌면 그랬을지도</a></li>
+                    <li><a class="dropdown-item" href="#now">지금, 그때</a></li>
+                    <li><a class="dropdown-item" href="#together">서로는 서로를</a></li>
+                    <li><a class="dropdown-item" href="#outro">outtro</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><strong>[싱글] 폴라로이드 러브</strong></a></li>
+                </ul>
+              </ul>
+              <span class="d-flex me-2" id="icons">
+                <a target="_blank" href="https://www.youtube.com/@soonchanggo5496"><i class="fa-brands fa-youtube fa-2xl" style="color: #e10e43;"></i></a>
+                <a target="_blank" href="https://www.instagram.com/soonchanggo/"><i class="fa-brands fa-instagram fa-2xl" style="color: #d64cd2;"></i></a>
+                <a target="_blank" href="https://www.melon.com/artist/timeline.htm?artistId=2401446"><i class="fa-solid fa-music fa-2xl" style="color: #36ce40;"></i></a>
+                <a target="_blank" href="https://vibe.naver.com/artist/2512309"><i class="fa-solid fa-music fa-2xl" style="color: #e63283;"></i></a>
+              </span>
+          </div>
+        </div>
+      </nav>
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Profile-SoonChangGo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal_view" class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div id="profile-container">
+                    <div class="profile_top">
+                        <div id="profile_img"><img src="SCG.jpg" alt="순창고 프로필 사진"></div>
+                        <div id="profile_text">
+                            <h2>SoonChangGo</h2>
+                            <p><em>Birth : 1994.10.30</em></p>
+                            <p><em>Debut : 2018.11.12</em></p>
+                            <p><em>Military : 2021.11.8 ~ 2023.5.12</em></p>
+                            <p><em>Favorite Food :<br>Pyeongyang Naengmyeon</em></p>
+                            <p><em>Favorite Idol : Suji</em></p>
+                        </div>
+                    </div>
+                    <div id="profile_main">
+                        <p><strong >Elbums</strong></p>
+                        <p>2018.11.12 - [Single]서로는 서로를</p>
+                        <p>2019.03.03 - [EP]지금, 그때</p>
+                        <p>2020.04.09 - [Single] 보라색 고백</p>
+                        <p>2020.07.09 - [Single] 잠금해제</p>
+                        <p>2020.10.23 - [정규] SOON</p>
+                        <p>2021.04.09 - [Single] 폴라로이드 러브</p>
+                    </div>
+                </div>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>         
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="purple_love.jpg" class="d-block w-100" alt="보라색고백">
+          </div>
+          <div class="carousel-item">
+            <img src="bye.jpg" class="d-block w-100" alt="바이">
+          </div>
+          <div class="carousel-item">
+            <img src="unlock.jpg" class="d-block w-100" alt="잠금해제">
+          </div>
+          <div class="carousel-item">
+            <img src="polaroid_love.jpg" class="d-block w-100" alt="폴라로이드러브">
+          </div>
+          <div class="carousel-item">
+            <img src="together.jpg" class="d-block w-100" alt="폴라로이드러브">
+          </div>
+          <div class="carousel-item">
+            <img src="now.jpg" class="d-block w-100" alt="폴라로이드러브">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+      
+      <div class="container text-center" id="music_card">
+        <div class="row">
+          <div id="pl" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="polaroid_love.jpg" class="card-img-top" alt="...">
+                <div class="card-body"> 
+                  <h5 class="card-title">Polaroid Love</h5>
+                  <audio controls loop src="polaloid_love_music.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse collapse" aria-labelledby="headingOne">
+                            <div class="accordion-body">
+                                어린아이처럼 순수한 미소가<br>날 설레게 하고 가슴 떨리게 해<br>따뜻한 손길 내 몸을 감싸면<br>나는 얼어붙어서 아무 말도 못 해<br>Hey 11월 첫눈보다 설레이는<br>Oh oh hey 5월 봄꽃보다 향기로운<br>Hey 8월 밤하늘의 반짝이는<br>Oh oh hey 별들보다 더 반짝이는<br>그런 네가 내게<br>내게로 온 거야<br>마치 봄눈처럼<br>예고도 없이<br>너만을 사랑할게<br>내겐 있을 수 없는<br>행복 준 너에게<br>정말 고맙다고 오오<br>저기 맑은 하늘을 봐<br>세상이 이렇게 예쁜지<br>너 때문에 알았어<br>Hey 매일이 이제는 너무 새로워<br>Oh oh hey<br>이 순간 사라질까 늘 두려워<br>Hey 어두움에 불안했던 날들<br>Oh oh hey 밝은 빛으로 나를 감싸준<br>그런 네가 내게<br>내게로 온 거야<br>마치 봄눈처럼<br>예고도 없이<br>너만을 사랑할게<br>내겐 있을 수 없는<br>행복 준 너에게<br>정말 고맙다고 오오<br>말할래<br>너만 바라볼 거야<br>매일 아침 눈뜨면<br>너 생각에<br>난 또 웃음 짓고<br>예전과 다른<br>행복 속에 살아<br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="purple" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="purple_love.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">보라색 고백</h5>
+                  <audio controls loop src="purple_love.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse collapse" aria-labelledby="headingTwo">
+                            <div class="accordion-body">
+                                내 마음에 다가와<br>너가 녹아들어<br>갑자기 들어와<br>내 마음을 흔들어놔<br>이젠 용기 내서<br>널 사랑한다고<br>많이 늦었다고<br>미안해 말할래<br>에에에에에에에에에<br>많은 날들에<br>너어어어가 있는데<br>내 마음은 그땐 아직<br>널 위한 준비가 안돼서<br>에에에에에에에에<br>에에에에에에에에<br>에에에에에에에에<br>에에에에에에에에<br>옛 기억들 모두<br>다 보내 버리고<br>너와 나 함께할<br>새로운 시작만<br>긴 기다림 속에서<br>우린 버텨 왔기에<br>우리가 함께 할<br>시간들은 행복만<br>에에에에에에에에에<br>많은 날들에<br>너어어어가 있는데<br>내 마음은 그땐 아직<br>널 위한 준비가 안돼서<br>에에에에에에에에에<br>많은 날들에<br>너어어어가 있는데<br>내 마음은 그땐 아직<br>널 위한 준비가 안돼서<br>에에에에에에에에<br>에에에에에에에에<br>에에에에에에에에<br>에에에에에에에에<br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="bye" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="bye.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bye</h5>
+                  <audio controls loop src="bye.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse collapse" aria-labelledby="headingThree">
+                            <div class="accordion-body">
+                                Bye my blue<br>내 맘을 괴롭혀 왔던<br> 깊숙이 박힌 my blue<br> Bye my blue<br> 하루에 시작은 눈물<br> 이유 모를 아픔<br>Don't leave me alone<br> Don't leave me alone<br> it takes me over<br>                                 Bye my love<br> 놓지도 놓을 수도 없는<br> 그런 나의 my love<br>                                 Bye my love<br> 내 맘을 괴롭혀 왔던<br> 깊숙이 박힌 my love<br>                                 Don't you leave me good bye<br> Don't you leave me good bye<br> our love is over<br>                                 I hope that you will cry<br>like I cry everyday because of you<br> I want you to suffer and feel the pain<br> like I cry everyday because of you<br> you will never feel my blue and love<br> oh I cry everyday because of you<br> you will never feel my blue and love<br> La~~~~~
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="unlock" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="unlock.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">잠금해제</h5>
+                  <audio controls loop src="unlock.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse collapse" aria-labelledby="headingFour">
+                            <div class="accordion-body">
+                                내가 바라던 내가 알았던 <br>그런 모습은 이제는 없지만 <br>마음속 깊이 간직해 왔던 <br>너의 모습은 버리기 싫어요 <br>너의 마음은 <br>I want to say that I love you <br>나 더 이상 망설이지 않을래 널 향한 마음 <br>I want to say that I love you <br>나 더 이상 같은 실수 안 할래<br>    정말 미안해 난 늘 숨었어 <br>이제야 깨달아 난 늘 뒤처지네 <br>이젠 못 놓아 네 옆에 누가 있든 <br>가까운 사이 말고 깊은 사이 될래 <br>너의 마음은 <br>                       I want to say that I love you <br>나 더 이상 망설이지 않을래 널 향한 마음 <br>I want to say that I love you <br>나 더 이상 같은 실수 안 할래 널 사랑해 <br>   Please don't leave me in the dark <br>Please don't leave me in the dark <br>                               I want to say that I love you (I won't let you go)<br>나 더 이상 망설이지 않을래 널 향한 마음 <br>I want to say that I love you <br>나 더 이상 같은 실수 안 할래 <br>I want to say that I love you (I won't let you go)<br>나 더 이상 망설이지 않을래 널 향한 마음 <br>I want to say that I love you <br>나 더 이상 같은 실수 안 할래 널 사랑해<br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="together" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="together.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">서로는 서로를</h5>
+                  <audio controls loop src="together.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse collapse" aria-labelledby="headingFive">
+                            <div class="accordion-body">
+                                이별을 했고<br>서로는 서로를 미워했고 <br>마음 한구석엔 <br>서로는 서로를 그리워해<br>널 만난 그 몇 년 때문에 <br>이렇게 힘이 든 데<br>근데 너도 나와 같을 거란 <br>생각에 그게 더 슬퍼<br>사랑할 때 몰랐던 거 <br>이별 해서야 알았던 거 <br>우리가 했던 많은 추억들이 <br>서로는 서로를 그립게 해  <br>가진 거 하나 없어도 <br>우린 정말로 당당했고 <br>너와 했던 그 모든 게 <br>다 처음이라 다행이야 <br>이제 진짜 놓아야겠죠 <br>난 항상 상황만 탓한 것 같아 <br>넌 다른 사랑을 찾았고 <br>난 너를 아직 그리워해 <br>근데 너도 나와 같을 거란 <br>생각에 그게 더 슬퍼
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="now" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="now.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">지금, 그때</h5>
+                  <audio controls loop src="now.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse collapse" aria-labelledby="headingSix">
+                            <div class="accordion-body">
+                                널 지금 만났다면 과연 많았을까 그땐 별로 없던 추억들 <br>널 지금 만났다면 과연 안 했을까 그때 했던 실수는<br>서툴러서 말 못 한 나의 진심들과 여유롭지 못해서 버린 우리 둘의 시간 <br>그 모든 게 이별을 만들었지만, 널 아프게 했지만 나도 처음 줘 본 사랑이야 <br>만약 이 모든 걸 안채 그때로 가면 뭔가 달라졌을까<br>시간이 흐르고 서로의 상처 아물 때쯤 과연 그때 만나면 서로 웃을 수 있을까 어떨까<br>눈물이 많았던 만큼 사랑도 깊었던 거지 그래서 너무 멀리 와버렸어 <br>만약 널 만나지 않았다면 지금 뭔가 달라졌을까 <br>그때를 생각해보면 우리 행복도 많이 했는데 <br>결국 이별이 그런 가봐요 과거를 집착하는 것<br>널 지금 만났다면 과연 어땠을까
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="cndjr" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="now.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">추억으로만 간직해야 해</h5>
+                  <audio controls loop src="cndjr.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse collapse" aria-labelledby="headingSeven">
+                            <div class="accordion-body">
+                                그녈 본 순간 한 번에 알았죠 <br>난 이제 그녀를 사랑할 거란 걸 <br>우린 그렇게 사랑했고 하루하루가 가슴 뛰었죠<br>우리 처음 만났을 때 그때 기억나니 <br>그때만 해도 서로 쑥스러웠지<br>같이 웃음 지었던 같이 눈물 흘렸던 <br>그 날들 내겐 전부 인 거지 <br>우리 한강을 거닐며 늦은 밤 <br>서로의 진심을 나눴지<br>너는 무뚝뚝했지만 나와 있을 땐 <br>웃음을 잃지 않았지<br>이젠 서로 곁에 없어서 <br>추억으로만 간직해야 해<br>매일 너를 그리워해 <br>근데 더이상 볼 수 없네<br>이젠 서로 곁에 없어서 <br>추억으로만 간직해야 해 
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="maum" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="now.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">마음 속 이야기</h5>
+                  <audio controls loop src="maum.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseEight" class="accordion-collapse collapse collapse" aria-labelledby="headingEight">
+                            <div class="accordion-body">
+                                천천히 잊어 가는 중입니다 <br>많이 힘들겠지만 그렇게 서서히 잊혀지리라 믿습니다 <br>시간이 아니라 내 마음이 당신 곁을 떠날 때 <br>그때 비소로 진짜 내 모습 찾을 수 있겠죠<br>잡을 수 없는 행복에 빠져 너무 오랜 시간 허덕였네요<br>돌아서 버린 그대의 마음 후회했을 땐 이미 늦었죠<br>너는 나의 일부였단 거 넌 나의 첫사랑 이란 거 <br>내 맘이 그렇다는 건 아직 널 찾고 있단 거 <br>천천히 잊어 가는 중입니다 <br>많이 힘들겠지만 그렇게 서서히 잊혀지리라 믿습니다 <br>시간이 아니라 내 마음이 당신 곁을 떠날 때 <br>그때 비소로 진짜 내 모습 찾을 수 있겠죠<br>
+                                
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="ag" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="now.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">아직 그리워해</h5>
+                  <audio controls loop src="ag.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseNine" class="accordion-collapse collapse collapse" aria-labelledby="headingNine">
+                            <div class="accordion-body">
+                                아직 그리워해 시간이 흘러도 <br>이별 온 순간부터 모든 것을 후회해 <br>그만하자 다짐해도 난 계속 추억을 끄집어내 <br>버리지 못했던 잊지 않았던 <br>너의 그 모습들 난 소중해<br>너를 저버리고 떠난 날 이젠 용서해 <br>너의 슬픔을 몰라 준 날 용서해<br>하루하루 아파해도 되돌릴 수 없는 사랑인 걸 <br>함께일 땐 몰랐던 무심코 넘겼던 거 <br>너의 외로움 이제야 알겠어 <br>미안하단 말로 채울 수 없는 아픔<br>그런 아픔을 너에게 준 것 같아
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="hc" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="elbum.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">한참</h5>
+                  <audio controls loop src="hc.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseTen" class="accordion-collapse collapse collapse" aria-labelledby="headingTen">
+                            <div class="accordion-body">
+                                한참 생각을 해본다<br>그땐 뭐가 문젠 건지<br>늘 뒤처지기만<br>하다가 널 이렇게 널<br><br>매일 잠 못 이룬다<br>요샌 너 생각이 너무 나<br>흐릿한 추억들 사이로<br>이렇게 널 또 보낸다<br><br>우우우우<br>당당한 내가 돼도<br>우우우우<br>널 잡을 순 없겠지<br><br>우우우우<br>부끄럽기만 한<br>나의 옛 모습이<br>나의 행동이<br>너의 아픔일까<br><br>넌 어디쯤일까<br>내가 거니는 이 길에<br>너의 발자국은 이미<br>남아 있는대 남겨져 있는대<br><br>너의 길을 따라가<br>끝엔 널 볼 수 있을까<br>자욱한 안개들 사이로<br>사라지겠지 넌 사라지겠지<br><br>우우우우<br>어떠한 말로도<br>우우우우<br>널 잡을 순 없겠지<br><br>우우우우<br>부끄럽기만 한<br>나의 옛 모습이<br>나의 행동이<br>너의 아픔일까
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="sg" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="elbum.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">사랑에 관하여</h5>
+                  <audio controls loop src="sg.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseEleven" class="accordion-collapse collapse collapse" aria-labelledby="headingEleven">
+                            <div class="accordion-body">
+                                사랑에 관하여 늘 힘들어하지만<br>또 사랑이 있어서 마음 놓이지 <br>사랑이 뭐길래 도대체 뭐길래 <br>아쉬움만 가득 찬 바람 같은지 <br>사랑에 관하여 늘 고민하지만<br>또 사랑이 온다면 우린 잊어 먹겠지 <br>사랑이 뭐길래 많고 많은 기억 중 <br>항상 남아 있는 건 행복했던 순간들 <br>                              우우 우우 우우 우 <br>우우 우우 우우 우<br>                       또 언젠가는 찾아오겠지 <br>그럼 두려워서 난 또 숨겠지 <br>옛 기억에서 벗어나지 못해 <br>또 흔들리겠지 <br> 우 우 우 우 우우 우 <br>우 우 우 우 우우 우<br>사랑에 관하여 늘 상처받지만 <br>사랑이 있어서 극복할 수 있고 <br>사랑이 있어서 웃을 수 있고 <br>사랑이 있어서 또 하루 살아가네
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="pilly" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="elbum.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Philly</h5>
+                  <audio controls loop src="pilly.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwelve">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseTwelve" class="accordion-collapse collapse collapse" aria-labelledby="headingTwelve">
+                            <div class="accordion-body">
+                                냄새를 보낼 수 있는 그런 세상이 올까<br>내 공기를 너에게 보낼 수 있는<br>그런 날이 올까<br>지금 내가 있는 곳에<br>네가 와 줄 수 없을 때<br>서로의 온기마저도 보내 줄 수 있게<br>내가 눈물이 흐를 때 네가 옆에 있을 수 없으면<br>토닥여주는 손길을 느낄 수 있게<br>서로의 공간을 담을 수 있는<br>그런 세상이 올까<br>내 눈앞에 펼쳐진 아름다운 풍경을<br>담아서 너에게 가져다줄래 <br>라라라라~<br>지금 내가 있는 이곳 아무리 아름다워도<br>너와 함께하지 못하면 아무런 의미가 없어<br>보고 싶다 말을 해도 달려갈 수 없을 때에<br>내가 느끼는 모든 걸 너에게 보낼 수 있는<br>그런 날이 오면 좋겠다<br>우리가 떨어져 있더라도 덜 아프게<br>내 숨소리 여기에 공기 날씨 바람 모든 거<br>지금 내가 있는 곳에<br>네가 와 줄 수 없을 때<br>서로의 온기마저도 보내 줄 수 있게<br>내가 눈물이 흐를 때 네가 옆에 있을 수 없으면<br>토닥여주는 손길을 느낄 수 있게<br>라라라라~
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="cry" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="elbum.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">오늘만 울자</h5>
+                  <audio controls loop src="cry.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThirteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseThirteen" class="accordion-collapse collapse collapse" aria-labelledby="headingThirteen">
+                            <div class="accordion-body">
+                                오늘만 울자 <br>오늘만 울고 <br>내일부터는 <br>넌 내 삶에서 없던 사람이 되는 거겠지 <br><br>생각 없이 <br>살다 보면 <br>언젠가는 <br>또 다른 세상이 보일 거야 <br><br>안개 짙은 거리를 걷는데도 <br>못 걷는 건 아니잖아 <br>잠깐이면 그치겠지 하고 <br>그냥 걷는 거지 <br><br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자 <br><br>겨울밤이 길다 해서 해가 <br>안 뜨는 건 아니잖아 <br>따듯한 날 기다리면 <br>그냥 사는 거지 <br><br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자 <br><br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자 <br><br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자 <br><br>오늘만 울자 <br>오늘만 울자 <br>오늘만 울자
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="how" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="elbum.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">어쩌면 그랬을지도</h5>
+                  <audio controls loop src="how.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFourteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseFourteen" class="accordion-collapse collapse collapse" aria-labelledby="headingFourteen">
+                            <div class="accordion-body">
+                                날 만날 때부터 너는<br>널 만날 때부터 나는<br>우린 어떤 마음을 가지고<br>처음 마주하게 된 걸까<br>그냥 가벼운 감정으로<br>서롤 바라보고 있었나<br>그래서 지금 우리가<br>눈물 흘리는 건 가봐<br>어떻게든 되돌리고 싶었던<br>우리의 사랑을 추억을<br>이 맘은 언제부터인지<br>이 맘은 언제부터인지<br>점점 멀어지는 내 마음을<br>점점 다가오는 우리 마지막을<br>우린 어떤 마음을 가지고<br>끝을 마주하게 된 걸까<br>서로 상처만 남긴 아픔이었을까<br>닿지 못한 손끝에서<br>결국 놓게 된 사랑일까<br>어떻게든 되돌리고 싶었던<br>우리의 사랑을 추억을<br>이 맘은 언제부터인지<br>이 맘은 언제부터인지<br>이 맘은 언제부터인지<br>이 맘은 언제부터인지<br>이 맘은 언제부터인지<br>이 맘은 언제부터인지<br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+          <div id="outro" class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="elbum.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">outro</h5>
+                  <audio controls loop src="outro.mp3"></audio>
+                  <p class="card-text">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFifteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+                              가사보기
+                            </button>
+                          </h2>
+                          <div id="collapseFifteen" class="accordion-collapse collapse collapse" aria-labelledby="headingFifteen">
+                            <div class="accordion-body">
+                               
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </p>
+                  <a href="#" class="btn btn-primary">Wacth Music Vedio</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

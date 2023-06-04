@@ -1,0 +1,122 @@
+body{
+    /* background-color: rgba(142, 67, 240, 0.5); */
+}
+
+.accordion-body{
+    font-size:12px;
+}
+#modal_view{
+    margin: 0;
+}
+#profile-container{
+    margin: 0;
+    width: 498px;
+}
+
+#profile-container > .profile_top{
+    display: inline-flex;
+    flex-direction: row;
+    width: 498px;
+}
+
+#profile_img{
+    margin: 30px;
+    margin-top: 3rem;
+}
+
+#profile_img > img{
+    border-radius: 50%;
+    border: 2px solid #8e43f0;
+}
+
+#profile_text{
+    margin-top: 30px;
+}
+
+#profile_text > h2{
+    text-align: center;
+    color: #8e43f0;
+}
+
+#profile_text > p{
+    margin-top: 10px;
+}
+
+#profile_main{
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+
+#nav{
+    position: sticky;
+    /* padding-top: 32px; */
+    top: 0px;
+    /* background-color: #8e43f0; */
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-bottom: 2px solid lightblue;
+}
+
+/* .navbar-brand{
+    border: 1px solid tomato;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+} */
+
+#profill > img{
+    border-radius: 50%;
+    border: 2px solid #8e43f0;
+    width: 5vb;
+}
+
+
+#audio_player{
+    margin-right: 4rem;
+    margin-top: 10px;
+}
+
+#audio_player > p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+#audio_player > audio{
+    width: 270px;
+    height: 30px;
+}
+
+.d-flex > a > i{
+    margin: 30px 1rem;
+}
+
+#carouselExampleIndicators{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;  
+}
+
+#carouselExampleIndicators img{
+    border-radius: 10px;
+}
+
+#music_card{
+    margin-top: 5em;
+}
+
+.card{
+    margin: 0 auto;
+}
+
+.col{
+    margin-top: 2rem;
+    margin-bottom: 2em;
+}
+
+#music_card audio{
+    width: 100%;
+    height: 30px;
+}
